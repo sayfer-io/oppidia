@@ -1,0 +1,28 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "main.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node dist/main.js",
+    "clean": "npm run clean:program",
+    "program:build": "cargo build-bpf --manifest-path=../chrono_key/Cargo.toml --bpf-out-dir=../chrono_key/target",
+    "program:clean": "cargo clean --manifest-path=../chrono_key/Cargo.toml && rm -rf ../chrono_key/target",
+    "program:test": "cargo test-sbf --manifest-path=../chrono_key/Cargo.toml",
+    "program:deploy": "solana program deploy ../chrono_key/target/chrono_key.so"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@solana/web3.js": "^1.87.1",
+    "borsh": "^1.0.0",
+    "inquirer": "^9.2.11"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.6",
+    "ts-node": "^10.9.1"
+  }
+}
