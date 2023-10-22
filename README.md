@@ -36,13 +36,16 @@ TODO - example on how to run the client code
 
 ### 📣 Contributing
 
-We appreciate and welcome contributions from the community! Soon we will have more details on how to contribute
+We appreciate and welcome contributions from the community! 
+Please read [`CONTRIBUTING.md`](CONTRIBUTING.md) for details on how to contribute to this project.
 
 ### 🌐 License
 
-This project is licensed under [License Name]. For more details, check out the LICENSE file.
+This project is licensed under GPL-3.0. See the [`LICENSE`](LICENSE) file for details.
 
-### 📬 Contact
+### 📬 Contact Us
 
+```
 Email: info@sayfer.io
 Twitter: @SayferSecurity
+```
