@@ -23,11 +23,16 @@ TODO
 TODO - example on how to run the client code
 
 ### 🗺️ Roadmap
-
+<small>*Not in particular order</small>
+- 
 - [ ] Transform into a standalone lib where developers can import the logic into their own programs
 - [ ] Adding more modules other than time locking
 - [ ] Create a module collections with customization for edge cases
 - [ ] Create a contribution guide on how developers can join the effort
+- [ ] Implement tests and CI/CD workflows
+- [ ] Create a website for the project
+- [ ] Create a documentation website with examples and tutorials
+- [ ] Create a CLI tool for easy integration with existing programs
 
 ### 📣 Contributing
 
