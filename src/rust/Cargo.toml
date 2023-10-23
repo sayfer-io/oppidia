@@ -6,8 +6,8 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-borsh = "1.1.0"
-borsh-derive = "1.1.0"
+borsh = "0.9.0"
+borsh-derive = "0.9.0"
 solana-program = "1.17.3"
 byteorder = "1.5.0"
 
@@ -18,3 +18,4 @@ borsh = "1.1.0"
 
 [lib]
 crate-type = ["cdylib", "lib"]
+path = "lib.rs"
