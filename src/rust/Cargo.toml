@@ -18,3 +18,4 @@ borsh = "1.1.0"
 
 [lib]
 crate-type = ["cdylib", "lib"]
+path = "rust/lib.rs"
