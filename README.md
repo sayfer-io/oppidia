@@ -41,10 +41,10 @@ Update connection, public and target key within the code to your updated values.
 1. const connection = new web3.Connection('<http://127.0.0.1:8899>'); *This is your local validator address.*
 2. const PROGRAM_ID = new web3.PublicKey('<Program Id>'); *This your newly generated `Program Id` that you just created.*
 3. const secretKeyString = fs.readFileSync('.config/solana/id.json', { encoding: 'utf-8' }); *This is where your local keys are stored*
-4. const targetPubkey = "<test-key-address>"; *This is a different address to test sending funds with.*
+4. const targetPubkey = "<test-key-address>"; *This is a different address to test sending/withdrawing funds with.*
 
 ##### Scripts
-For ease of use you can update the scripts inside of your `package.json` here's an example of how to set it up.
+For ease of use you can update the scripts inside your `package.json` here's an example of how to set it up.
 This is especially handy when updating the smart contract because with any change made to the smart contract you must
 "clean" "build" and redeploy to generate a new `Program Id`.
 
@@ -63,6 +63,15 @@ Once updated you should be able to use `npm run start` to interact to the smart 
 *Note: this is still currently under development so issues may arise when attempting to connect*.
 
 ### 📝 Usage
+The concept for this is to show the "time-lock" mechanism in action. We have a basic CLI to walk you through the process.
+When starting the client you'll get a prompt *What do you want to do?*
+
+- **Withdraw All Funds**: as the name implies will attempt to withdraw all funds from specified wallet `targetPubkey`. Which will trigger the timelock mechanism.
+- **Cancel Function**: This will cancel the function in time-lock.
+- **Check Execution**: Will check the status of function
+- **Set Delegate**: Allows you to set a trusted delegate to also be able to cancel the function.
+  
+*Note: Still in rapid development and there could be many changes/bugs*
 
 
 ### 🗺️ Roadmap
